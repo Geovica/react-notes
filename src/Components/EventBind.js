@@ -17,7 +17,7 @@ class ExtendBind extends Component {
     render() {
         return (
             <div>
-                <h3>{this.state.message} This is an Event Binding</h3>
+                <h3>{this.state.message} This is an Event Binding </h3>
                 <button onClick={() => this.welcome()}>Ok</button>
             </div>
         )
