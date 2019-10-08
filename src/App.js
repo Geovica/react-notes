@@ -1,26 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {Component} from 'react';
+import Counter from './Components/Counter';
+import Greet from './Components/Greet';
+import Welcome from './Components/Welcome';
+import ExtendBind from './Components/EventBind';
+import ParentComponent from './Components/ParentComponent';
+import UserGreeting from './Components/UserGreeting';
 
-function App() {
+
+
+class App extends Component{
+  render() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Counter  />
+    <Greet name="Geo"/>
+    <Welcome name=" Geovic" /> 
+ 
+    <ExtendBind />
+
+
+    <ParentComponent />
+
+    <UserGreeting />
+
+    
     </div>
   );
+}
 }
 
 export default App;
