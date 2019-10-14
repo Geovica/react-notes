@@ -10,7 +10,7 @@ class ComponentE extends Component {
                     {
 
                     name => {
-                    return <h1>Hello Geo{name}</h1>
+                    return <h1>Hello {name}</h1>
                     }
                 }
                 </UserConsumer>
